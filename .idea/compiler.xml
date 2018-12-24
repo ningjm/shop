@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="njm-shop-api-member" />
+        <module name="njm-shop-api-pay" />
+        <module name="njm-shop-common" />
+        <module name="njm-shop-server-eruka" />
+        <module name="njm-shop-server-zuul" />
+        <module name="njm-shop-service-member" />
+        <module name="njm-shop-service-pay" />
+        <module name="njm-shop-web-backstage" />
+        <module name="njm-shop-web-h5" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="njm-shop-service" target="1.8" />
+      <module name="njm-shop-web" target="1.8" />
+      <module name="web-back" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="njm-shop-api-member" options="-parameters" />
+      <module name="njm-shop-api-pay" options="-parameters" />
+      <module name="njm-shop-common" options="-parameters" />
+      <module name="njm-shop-server-eruka" options="-parameters" />
+      <module name="njm-shop-server-zuul" options="-parameters" />
+      <module name="njm-shop-service-member" options="-parameters" />
+      <module name="njm-shop-service-pay" options="-parameters" />
+      <module name="njm-shop-web-backstage" options="-parameters" />
+      <module name="njm-shop-web-h5" options="-parameters" />
+      <module name="web-back" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-api/njm-shop-api-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-server/njm-shop-server-eruka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-server/njm-shop-server-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-web/njm-shop-web-backstage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/njm-shop-web/njm-shop-web-h5" charset="UTF-8" />
+  </component>
+</project>
