@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service.iml" filepath="$PROJECT_DIR$/njm-shop-service/njm-shop-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/njm-shop-web/njm-shop-web.iml" filepath="$PROJECT_DIR$/njm-shop-web/njm-shop-web.iml" />
-    </modules>
-  </component>
-</project>

@@ -9,20 +9,133 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <!--Maven的用户可以通过继承spring-boot-starter-parent项目来获得一些合理的默认配置。这个parent提供了以下特性：-->
+    <!--默认使用Java 8-->
+    <!--使用UTF-8编码-->
+    <!--一个引用管理的功能，在dependencies里的部分配置可以不用填写version信息，这些version信息会从spring-boot-dependencies里得到继承。-->
+    <!--识别过来资源过滤（Sensible resource filtering.）-->
+    <!--识别插件的配置（Sensible plugin configuration (exec plugin, surefire, Git commit ID, shade).）-->
+    <!--能够识别application.properties和application.yml类型的文件，同时也能支持profile-specific类型的文件（如： application-foo.properties and application-foo.yml，这个功能可以更好的配置不同生产环境下的配置文件)。-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.0.1.RELEASE</version>
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
+
+
+    <!--统一springcloud版本号-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.M7</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+
+    <repositories>
+        <!--据说加上这个包可以防止一些包依赖有问题-->
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <!--阿里云仓库,配置这个就不需要改tomcat配置文件了-->
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>Nexus aliyun</name>
+            <layout>default</layout>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <profiles>
+        <!--开发环境-->
+        <profile>
+            <id>dev</id>
+            <properties>
+                <build.profile.id>dev</build.profile.id>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <!--测试环境-->
+        <profile>
+            <id>test</id>
+            <properties>
+                <build.profile.id>test</build.profile.id>
+            </properties>
+        </profile>
+        <!--生产环境-->
+        <profile>
+            <id>prod</id>
+            <properties>
+                <build.profile.id>prod</build.profile.id>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources.${build.profile.id}</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
+        <!--将每个项目打成可执行的jar包。不使用，因为api项目不需要可执行-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    </build>
 
     <modules>
         <module>njm-shop-api</module>
         <module>njm-shop-server</module>
         <module>njm-shop-service</module>
         <module>njm-shop-common</module>
-        <module>njm-shop-web</module>
-        <module>njm-shop-service</module>
         <module>njm-shop-web</module>
     </modules>
 

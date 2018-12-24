@@ -13,8 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>njm-shop-server-zuul</module>
-        <module>njm-shop-server-eruka</module>
+        <module>njm-shop-server-eureka</module>
     </modules>
-
 
 </project>

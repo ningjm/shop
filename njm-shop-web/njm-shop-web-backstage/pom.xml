@@ -11,68 +11,11 @@
 
     <artifactId>njm-shop-web-backstage</artifactId>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <!--去除内部tomcat-->
-                <!--<exclusions>-->
-
-                <!--<exclusion>-->
-
-                <!--<groupId>org.springframework.boot</groupId>-->
-
-                <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-
-                <!--</exclusion>-->
-
-                <!--</exclusions>-->
-            </dependency>
-
-            <!--运行时用到的tomcat，打成war时会自动去掉-->
-            <!--<dependency>-->
-
-            <!--<groupId>org.springframework.boot</groupId>-->
-
-            <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-
-            <!--<scope>provided</scope>-->
-
-            <!--</dependency>-->
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-thymeleaf</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                </plugin>
-
-                <!-- 给war包起别名 -->
-                <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-war-plugin</artifactId>-->
-                <!--<configuration>-->
-                <!--<warName>ideawork</warName>-->
-                <!--</configuration>-->
-                <!--</plugin>-->
-            </plugins>
-        </pluginManagement>
-    </build>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
