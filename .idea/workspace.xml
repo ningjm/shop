@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5725f5bb-3127-49f1-abc6-9efa65a80e6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/njm-shop-api/njm-shop-api-member/src/main/java/com/njm/api/model/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-api/njm-shop-api-member/src/main/java/com/njm/api/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/model/Pay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/java/com/njm/api/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/impl/PayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/feign/MemberFeign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/njm-shop-server/njm-shop-server-eureka/src/main/java/com/njm/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-server/njm-shop-server-eureka/src/main/java/com/njm/eureka/EurekaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/java/com/njm/api/service/MemberApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/java/com/njm/api/service/MemberApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/PayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/PayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/njm-shop-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/impl/PayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/impl/PayServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/njm-shop-common/target/" />
@@ -77,9 +62,9 @@
           <entry key="class" value="4" />
           <entry key="fxml" value="1" />
           <entry key="iml" value="5" />
-          <entry key="java" value="26" />
+          <entry key="java" value="31" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="64" />
+          <entry key="xml" value="65" />
           <entry key="xsd" value="1" />
           <entry key="yml" value="34" />
         </counts>
@@ -88,25 +73,25 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="5" />
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="31" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="66" />
+          <entry key="XML" value="67" />
           <entry key="YAML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="java" value="815" />
-          <entry key="xml" value="616" />
+          <entry key="java" value="1044" />
+          <entry key="xml" value="625" />
           <entry key="yml" value="178" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="815" />
+          <entry key="JAVA" value="1044" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="XML" value="616" />
+          <entry key="XML" value="625" />
           <entry key="YAML" value="178" />
         </counts>
       </usages-collector>
@@ -118,7 +103,62 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/PayApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/feign/MemberFeign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/impl/PayServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -172,12 +212,13 @@
         <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/njm-shop-server/njm-shop-server-eureka/src/main/java/com/njm/eureka/EurekaApplication.java" />
         <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/java/com/njm/api/service/MemberApplication.java" />
-        <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/PayApplication.java" />
         <option value="$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/model/Pay.java" />
-        <option value="$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java" />
-        <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/pom.xml" />
-        <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/impl/PayServiceImpl.java" />
         <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/java/com/njm/api/service/impl/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/PayApplication.java" />
+        <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/feign/MemberFeign.java" />
+        <option value="$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java" />
+        <option value="$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/impl/PayServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -220,11 +261,11 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="njm-shop-service-member" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="njm-shop-service-pay" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="njm-shop-service-member" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="njm-shop-service-pay" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
@@ -268,142 +309,6 @@
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api-pay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api-pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api-pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api-pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api-pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api-pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="njm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-api-pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="njm" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server-eureka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="njm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server" type="462c0819:PsiDirectoryNode" />
-              <item name="njm-shop-server-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="njm" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -592,11 +497,21 @@
               <item name="njm-shop-service-pay" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="njm" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="njm-shop-service" type="462c0819:PsiDirectoryNode" />
+              <item name="njm-shop-service-pay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -615,7 +530,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545724332278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545725964008" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -726,12 +641,12 @@
       <workItem from="1545701289787" duration="5654000" />
       <workItem from="1545706983987" duration="277000" />
       <workItem from="1545717756192" duration="3150000" />
-      <workItem from="1545720952263" duration="2974000" />
+      <workItem from="1545720952263" duration="4601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32384000" />
+    <option name="totallyTimeSpent" value="34011000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -769,7 +684,7 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.329718" />
       <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.717484" visible="true" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven Projects" order="1" weight="0.32782516" />
+      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.13059701" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -826,11 +741,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2835" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-40" />
@@ -1120,17 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/PayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/model/Pay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1148,37 +1047,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java">
+    <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/PayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/java/com/njm/api/service/impl/MemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="134">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="326">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-member/src/main/java/com/njm/api/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/feign/MemberFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/njm-shop-api/njm-shop-api-pay/src/main/java/com/njm/api/service/PayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/njm-shop-service/njm-shop-service-pay/src/main/java/com/njm/api/service/impl/PayServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="351">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

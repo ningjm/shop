@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @program: shop
@@ -18,5 +19,5 @@ import java.util.List;
 public interface PayService {
 
     @RequestMapping("/pay_money")
-    List<Pay> payMoney();
+    Map<String,Object> payMoney();
 }
