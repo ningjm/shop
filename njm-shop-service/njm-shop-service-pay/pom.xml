@@ -11,5 +11,12 @@
 
     <artifactId>njm-shop-service-pay</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.njm</groupId>
+            <artifactId>njm-shop-api-pay</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

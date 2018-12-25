@@ -16,6 +16,15 @@
         <module>njm-shop-service-pay</module>
     </modules>
 
+    <dependencies>
+        <!-- SpringBoot整合eureka客户端 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
