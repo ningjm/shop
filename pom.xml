@@ -23,6 +23,11 @@
     </parent>
 
     <dependencies>
+
+        <!--boot2.0新特性:Starter 的传递依赖的改变:
+        以前有几个Spring Boot starter是依靠Spring MVC和spring-boot-starter-web传递的。
+         为了对Spring WebFlux的支持，spring-boot-starter-mustache和spring-boot-starter-thymeleaf不再依赖spring-boot-starter-web。
+         现在你要自己选择并添加spring-boot-starter-web或spring-boot-starter-webflux作为依赖。-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -82,6 +87,7 @@
         </repository>
     </repositories>
 
+    <!--多环境配置-->
     <profiles>
         <!--开发环境-->
         <profile>
@@ -110,25 +116,42 @@
     </profiles>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
         <resources>
+            <!--多环境配置=====指向路径-->
             <resource>
-                <directory>src/main/resources</directory>
-                <filtering>false</filtering>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>application.yml</include>
+                </includes>
             </resource>
+            <!--多环境配置=====指向路径-->
             <resource>
-                <directory>src/main/resources.${build.profile.id}</directory>
-                <filtering>false</filtering>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
             </resource>
         </resources>
 
-        <!--将每个项目打成可执行的jar包。不使用，因为api项目不需要可执行-->
-        <!--<plugins>-->
+
+
+        <plugins>
+            <!--将每个项目打成可执行的jar包。不使用，因为api项目不需要可执行-->
             <!--<plugin>-->
                 <!--<groupId>org.springframework.boot</groupId>-->
                 <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
             <!--</plugin>-->
-        <!--</plugins>-->
+
+            <!--允许spring配置文件动态读取maven参数-->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>utf-8</encoding>
+                    <useDefaultDelimiters>true</useDefaultDelimiters>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <modules>
