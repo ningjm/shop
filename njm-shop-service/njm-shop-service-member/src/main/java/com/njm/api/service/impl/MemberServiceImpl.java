@@ -2,6 +2,7 @@ package com.njm.api.service.impl;
 
 import com.njm.api.model.Member;
 import com.njm.api.service.MemberService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,6 +18,9 @@ import java.util.List;
 @Service    //不要忘了@Service
 public class MemberServiceImpl implements MemberService {
 
+    @Value("${server.port}")
+    private String prot;
+
     @Override
     public List<Member> getMember() {
         List<Member> ls = new ArrayList<>();
@@ -24,7 +28,7 @@ public class MemberServiceImpl implements MemberService {
         member.setName("二狗");
         member.setAge(2);
         Member member2 = new Member();
-        member2.setName("大狗");
+        member2.setName("端口号为："+ prot);
         member2.setAge(3);
         ls.add(member);
         ls.add(member2);

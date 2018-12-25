@@ -15,6 +15,9 @@ import java.util.List;
  * @create: 2018-12-25 16:03
  **/
 
+/**
+ * FeignClient默认开启了ribbon本地负载均衡功能
+ */
 @FeignClient(name = "shop-member")  //调用会员服务
 @RestController
 @RequestMapping("/member")

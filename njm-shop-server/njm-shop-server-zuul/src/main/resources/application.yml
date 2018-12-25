@@ -1,0 +1,25 @@
+#zuul默认开启了ribbon本地负载均衡功能
+server:
+  port: 7070
+###网关名称
+spring:
+  application:
+    name: service-zuul
+###注册 中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka,http://localhost:9093/eureka
+### 配置网关反向代理
+zuul:
+  routes:
+    api-member:   #此处的api-member可以随便写，写成api-a都可以
+      ### 以 /api-member/访问转发到会员服务
+      path: /api-member/**
+      serviceId: shop-member
+    api-pay:
+      ### 以 /api-order/访问转发到支付服务
+      path: /api-pay/**
+      serviceId: shop-pay
+
+
