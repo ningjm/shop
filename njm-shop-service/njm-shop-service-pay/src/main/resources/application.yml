@@ -1,3 +1,49 @@
 spring:
   profiles:
     active: ${build.profile.id}
+
+###feign包含了ribbon和hystrix,ribbon是默认开启的，hystrix要自开启
+###一般设置hystrix的超时时间大于ribbon的超时时间
+###设置ribbon超时时间
+###Ribbon超时与Hystrix超时问题，为了确保Ribbon重试的时候不被熔断，我们就需要让Hystrix的超时时间大于Ribbon的超时时间，否则Hystrix命令超时后，该命令直接熔断，重试机制就没有任何意义了。
+ribbon:
+  ###指的是建立连接所用的时间，两端连接所用的时间。
+  ConnectTimeout: 2000
+  ###指的是建立连接后从服务器读取到可用资源所用的时间。
+  ReadTimeout: 5000
+
+
+###用户体验：当大量并发的时候，加大核心线程数来快速处理大量同步并发请求。
+            #如果服务出bug，则降级友好意识“服务器开小差”就好。
+            #下面配置这些超时配置，只是为了可以让大量请求等待，我们加大核心线程数来处理就好
+
+###feign开启hystrix功能
+feign:
+  hystrix:
+    enabled: true
+
+
+hystrix:
+  threadpool:
+    default:
+      ####10,200,200，如果请求接口业务在1秒内完成，并发量(同时请求)为5000,6000都没问题
+      coreSize: 100      #hystrix核心线程数
+      maxQueueSize: 200   #hystrix线程最大队列数：默认-1，即不允许排队
+      #这个属性设置跟maxQueueSize一样大小就好，，注意，这个属性是要和maxQueueSize一起使用的，如果maxQueueSize为-1，则此属性不生效。
+      #这个属性其实是maxQueueSize的一个阈值，而且，如果要设置maxQueueSize，则queueSizeRejectionThreshold也要设置，不然maxQueueSize其实是没什么用的
+      #例如：maxQueueSize=10，queueSizeRejectionThreshold=5；如果排队超过了5，即到了队列的阈值，后面的请求直接拒绝了。所以maxQueueSize=10还有什么用？
+      #所以设置大小一样就好。
+      queueSizeRejectionThreshold: 200
+  command:
+    default:
+      fallback:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 2000    #fallback降级方法并发数，默认10
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000 #设置hystrix超时时间,设为30秒以上就好，设短了有问题
+
+
+

@@ -1,12 +1,14 @@
 ###服务端口号
 server:
-  port: 9093
+  port: 9090
 ###服务名称
 spring:
   application:
     name: eureka-server
 ###eureka 基本信息配置
 eureka:
+  server:
+    enable-self-preservation: false   #eureka自我保护机制，开发环境为false,线上环境强烈要求为true
   instance:
     ###注册到eurekaip地址
     hostname: 127.0.0.1

@@ -20,4 +20,12 @@ public interface PayService {
 
     @RequestMapping("/pay_money")
     Map<String,Object> payMoney();
+
+    //此接口用来测试雪崩效应
+    @RequestMapping("/pay_money2")
+    Map<String,Object> payMoney2();
+
+    //此接口用来测试是否与pay_money2同一个线程池
+    @RequestMapping("/pay_money3")
+    Map<String,Object> payMoney3();
 }
