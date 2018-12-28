@@ -59,8 +59,8 @@ public class PayServiceImpl implements PayService {
     @Override
     public Map<String, Object> payMoney2() {
         List<Object> ls = new ArrayList<>();
-        List<Member> members = memberFeign.getMember();
-        ls.add(members);
+//        List<Member> members = memberFeign.getMember();
+//        ls.add(members);
         Map<String,Object> map = new HashMap<>();
         map.put("ls",ls );
         System.out.println("payMoney2:"+ Thread.currentThread().getName());
